@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gpt-from-scratch"
+version = "0.1.0"
+description = ""
+authors = ["Selvin Selbaraju <selvinoselbaraju@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gpt_from_scratch"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.0.1"
+numpy = "^1.24.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
