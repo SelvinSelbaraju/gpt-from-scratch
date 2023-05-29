@@ -1,8 +1,9 @@
 import torch
 from gpt_from_scratch.tokenizers.basetokenizer import BaseTokenizer
 
+
 # The vocab has one entry per character
-# Here we have a small vocab but long sequneces for a given string
+# Here we have a small vocab but long sequneces for a given string
 class CharacterTokenizer(BaseTokenizer):
     def encode(self, text: str) -> torch.Tensor:
         idx_list = [self.char_to_idx[char] for char in text]
