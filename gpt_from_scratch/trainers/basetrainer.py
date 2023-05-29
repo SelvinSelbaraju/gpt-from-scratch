@@ -18,6 +18,7 @@ class BaseTrainer(ABC):
 
     # Get random batches of train and validation
     # Average loss amongst those
+    @torch.no_grad()
     def _estimate_loss(
         self, train_data: torch.Tensor, val_data: torch.Tensor
     ) -> Tuple[torch.Tensor, torch.Tensor]:
